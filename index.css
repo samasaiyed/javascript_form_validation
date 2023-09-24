@@ -1,0 +1,67 @@
+body
+{
+    background: linear-gradient(to right, #00f0ff, #ee82ee, #6a5acd);
+    font-family: 'poppins', sans-serif;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.reg_form
+{
+    width: 350px;
+    margin: 20px;
+    background-color: aliceblue;
+    padding: 20px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+.reg_form h1
+{
+    color: darkslateblue;
+    text-align: center;
+}
+.reg_form input[type="submit"]
+{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #6a5acd;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.reg_form input[type="submit"]:hover 
+{
+    background-color: #ee82ee;
+    color: black;
+}
+.input_field
+{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.input_field input,.country,.hobbies,.gender
+{
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    border: none;
+    border-bottom: 2px solid gray;
+    margin-top: 5px;
+    color: black;
+    font-size: 14px;
+}
+/*display hobbies one by one
+.hobbies
+{
+    display:flex;
+    flex-direction: column;
+}*/

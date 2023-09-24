@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>
+    <title>Registration form </title>
+
+</head>
+<body>
+    <div class="container">
+        <form name="reg_form" class="reg_form" action="/" onsubmit ="return validateForm();" method="post">
+            <h1> Registration Form </h1><hr>
+            <div class="input_field">
+                <label> Name </label>
+                <input type="text" id="name" name="name" class="name" placeholder="Name...">
+                <span class="error" id="err_name"> </span>
+            </div>
+            <div class="input_field">
+                <label> E-mail Id </label>
+                <input type="text" id="email" name="email" class="email" placeholder="E-mail Id...">
+                <span class="error" id="err_email"> </span>
+            </div>
+            <div class="input_field">
+                <label> Mobile Number </label>
+                <input type="text" id="mo_num" name="mo_num" class="mo_num" placeholder="Mobile Number...">
+                <span class="error" id="err_mo_num"> </span>
+            </div>
+            <div class="input_field">
+                <label> Country </label>
+                <select name="country" class="country" aria-labelledby="country">
+                    <option> Select </option>
+                    <option> Australia </option>
+                    <option> India </option>
+                    <option> South Korea </option>
+                    <option> United States</option>
+                    <option> United Kingdom </option>
+                </select>
+                <span class="error" id="err_country"> </span>
+            </div>
+            <div class="input_field">
+                <label> Gender </label>
+                <div class="gender">
+                    <label> <input type="radio" name="gender" value="male"> Male </label>
+                    <label> <input type="radio" name="gender" value="female"> Female </label>
+                </div>
+                <span class="error" id="err_gender"> </span>
+            </div>
+            <div class="input_field">
+                <label> Hobbies <i>(Opotional)</i> </label>
+                <div class="hobbies" name="hobbies">
+                    <label> <input type="checkbox" name="hobbies[]" value="Sports"> Sports </label>
+                    <label> <input type="checkbox" name="hobbies[]" value="Movies"> Movies </label>
+                    <label> <input type="checkbox" name="hobbies[]" value="Music"> Music </label>
+                    <label> <input type="checkbox" name="hobbies[]" value="Reading"> Reading </label>
+                </div>
+            </div>
+            <div class="input_field">
+                <label> Password </label>
+                <input type="password" id="password" name="password" class="password" placeholder="Password...">
+                <span class="error" id="err_password"> </span>
+            </div>
+            <div class="input_field">
+                <label> Confirm Password </label>
+                <input type="password" id="c_password" name="c_password" class="c_password" placeholder="Confirm Password...">
+                <span class="error" id="err_cpassword"> </span>
+            </div>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+</html>
